@@ -1,5 +1,7 @@
 # Fullstack E-Commerce: Angular, Express.js, MongoDB, Mongoose, Stripe and TailwindCSS
 
+![image](https://github.com/user-attachments/assets/8944d135-b8ca-4e1d-bbc3-effe804338c9)
+
 ## Prerequisites
 
 **Node version 18.x.x**
