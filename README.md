@@ -4,7 +4,8 @@
 
 ## Prerequisites
 
-**Node version 18.x.x**
+**Node version 20.x.x**
+**Angular CLI 18.x.x**
 
 ## Setting up the project
 
