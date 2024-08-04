@@ -1,0 +1,112 @@
+<aside>
+   <div>
+      <button
+         class="font-medium rounded-lg text-sm px-5 py-2.5 focus:outline-none flex items-center gap-3 transition hover:bg-gray-100"
+         type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation"
+         aria-controls="drawer-navigation">
+         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6l16 0" />
+            <path d="M4 12l16 0" />
+            <path d="M4 18l16 0" />
+         </svg>
+      </button>
+   </div>
+   <nav id="drawer-navigation"
+      class="border-r shadow-md border-gray-200 fixed top-0 left-0 z-40 w-72 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white"
+      tabindex="-1" aria-labelledby="drawer-navigation-label">
+      <h3 class="text-lg font-semibold text-gray-900" id="drawer-navigation-label">
+         <span class="text-orange-500">psuarezdev's</span> Store
+      </h3>
+      <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation"
+         class="text-gray-400 bg-transparent transition hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 end-2.5 inline-flex items-center">
+         <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd"
+               d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+               clip-rule="evenodd"></path>
+         </svg>
+         <span class="sr-only">Close menu</span>
+      </button>
+      <hr class="mt-4 border-gray-300">
+      <div>
+         <div class="overflow-y-auto mt-6">
+            <ul class="space-y-2 font-medium">
+               <li>
+                  <a routerLink="/home"
+                     class="flex items-center p-2 text-gray-900 rounded-lg transition hover:bg-gray-100 group">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M5 12l-2 0l9 -9l9 9l-2 0" />
+                        <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+                        <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+                     </svg>
+                     <span class="ms-3">Home</span>
+                  </a>
+               </li>
+               <li>
+                  <a routerLink="/home/me"
+                     class="flex items-center p-2 text-gray-900 rounded-lg transition hover:bg-gray-100 group">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="25"
+                        height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                     </svg>
+                     <span class="ms-3">Your profile</span>
+                  </a>
+               </li>
+               <li>
+                  <a routerLink="/home/favorites"
+                     class="flex items-center p-2 text-gray-900 rounded-lg transition hover:bg-gray-100 group">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"
+                        stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                     </svg>
+                     <span class="ms-3">Your favorites</span>
+                  </a>
+               </li>
+               <li>
+                  <a routerLink="/home/cart"
+                     class="flex items-center p-2 text-gray-900 rounded-lg transition hover:bg-gray-100 group">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart"
+                        width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                     </svg>
+                     <span class="ms-3">Your cart</span>
+                  </a>
+               </li>
+               <li>
+                  <a routerLink="/home/orders"
+                     class="flex items-center p-2 text-gray-900 rounded-lg transition hover:bg-gray-100 group">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                        <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
+                        <path d="M3 9l4 0" />
+                      </svg>
+                     <span class="ms-3">Your orders</span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+         <div class="w-full max-w-64 absolute bottom-0 mb-4">
+            <button
+               (click)="onSignOut()"
+               class="w-full before:ease relative h-12 overflow-hidden border border-orange-500 bg-orange-500 text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-16 before:rotate-6 before:bg-white before:opacity-10 before:duration-500 hover:shadow-orange-500 hover:before:-translate-x-72 rounded">
+               <span relative="relative z-10">Sign out</span>
+            </button>
+         </div>
+      </div>
+   </nav>
+</aside>

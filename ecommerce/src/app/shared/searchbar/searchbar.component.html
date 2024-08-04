@@ -1,0 +1,13 @@
+<form [formGroup]="form" autocomplete="off" (ngSubmit)="onSubmit()">
+  <div class="relative w-full">
+    <input type="search" id="search-dropdown" formControlName="search"
+      class="w-full block p-2.5 z-20 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-orange-500 focus:border-orange-500"
+      placeholder="Search" required />
+    <button type="submit" class="absolute rounded-e-lg top-0 end-0 p-2.5 text-sm font-medium h-full before:ease overflow-hidden border border-orange-500 bg-orange-500 text-white shadow-2xl transition-all before:absolute before:right-0 before:top-0 before:h-12 before:w-6 before:translate-x-12 before:rotate-6 before:bg-white before:opacity-10 before:duration-700 hover:shadow-orange-500 hover:before:-translate-x-40">
+      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+      </svg>
+    </button>
+  </div>
+</form>
