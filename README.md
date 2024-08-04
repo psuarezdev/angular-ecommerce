@@ -44,7 +44,7 @@ export const environment = {
 ```js
 PORT=
 CLIENT_URL=
-JWT_SECRET=G
+JWT_SECRET=
 STRIPE_SECRET=
 // This is the checkout webhook secret
 STRIPE_WEBHOOK_SECRET=
